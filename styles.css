@@ -6,8 +6,22 @@ h1 {
     color: darkblue;
     text-align: center;
 }
+h2{
+    color: black;
+    text-align: left;
+}
 .about {
-    text-align: right;
+    text-align: left;
     width: 100%;
-    color: darkblue;
+    color: blue;
+}
+.skills {
+text-align: left;
+width: 100%;
+color: blue;
+}
+.projects {
+    text-align: left;
+    width: 100%;
+    color: blue;
 }
