@@ -1,14 +1,18 @@
 body {
-    background-color: lightblue;
+    background-color: lightcyan;
     font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
-    color: darkblue;
+    color: blue;
     text-align: center;
 }
-h2{
+h2 {
     color: black;
     text-align: left;
+}
+h3 {
+    text-align: left;
+    color: blue;
 }
 .about {
     text-align: left;
