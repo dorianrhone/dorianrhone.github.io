@@ -11,8 +11,8 @@ h2 {
     text-align: left;
 }
 h3 {
-    text-align: left;
-    color: blue;
+    text-align: center;
+    color: rgb(0, 234, 255);
 }
 .about {
     text-align: left;
@@ -42,27 +42,27 @@ color: blue;
 width: 30%;
 margin: 10px;
 padding: 20px 10px;
-background: rgb(0, 117, 124); /* pick a color */
+background: gainsboro; /* pick a color */
 border-radius: 25%;
 }
 
 .project img {
-    width: 400px;
+    width: 300px;
     /*height: 300px;*/
     margin: 10px;
-    border: 2px solid rgb(253, 253, 253); /* choose a color */
+    border: 2px solid rgb(24, 199, 202); /* choose a color */
     display: block;
     margin: auto;
     }
 
 a { /* change the appearance of ALL links */
     text-decoration: none;
-    text-align: right;
-    color: rgb(190, 109, 10);
+    text-align: left;
+    color: lightblue;
 }
         
 .project p { /* change the appearance of paragraph tags inside .project divs */
     text-align: center;
     margin: 15px;
-    color: rgb(131, 15, 208);
+    color: blue;
 }
