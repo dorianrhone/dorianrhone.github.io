@@ -3,7 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
-    color: blue;
+    color: black;
     text-align: center;
 }
 h2 {
@@ -12,45 +12,45 @@ h2 {
 }
 h3 {
     text-align: center;
-    color: rgb(0, 234, 255);
+    color: black;
 }
 .about {
     text-align: left;
     width: 100%;
-    color: blue;
+    color: black;
 }
 .skills {
-text-align: left;
-width: 100%;
-color: blue;
+    text-align: left;
+    width: 100%;
+    color: black;
 }
 .projects {
     text-align: left;
     width: 100%;
-    color: blue;
+    color: black;
 }
 .contact {
     text-align: left;
     width: 100%;
-    color: blue;
+    color: black;
 }
 .projects { 
     display:flex; 
     flex-wrap:wrap; 
 } 
 .project {
-width: 30%;
-margin: 10px;
-padding: 20px 10px;
-background: gainsboro; /* pick a color */
-border-radius: 25%;
+    width: 30%;
+    margin: 10px;
+    padding: 20px 10px;
+    background: gainsboro; /* pick a color */
+    border-radius: 25%;
 }
 
 .project img {
     width: 300px;
     /*height: 300px;*/
     margin: 10px;
-    border: 2px solid rgb(24, 199, 202); /* choose a color */
+    border: 2px solid black; /* choose a color */
     display: block;
     margin: auto;
     }
@@ -58,11 +58,11 @@ border-radius: 25%;
 a { /* change the appearance of ALL links */
     text-decoration: none;
     text-align: left;
-    color: lightblue;
+    color: black;
 }
         
 .project p { /* change the appearance of paragraph tags inside .project divs */
     text-align: center;
     margin: 15px;
-    color: blue;
+    color: black;
 }
