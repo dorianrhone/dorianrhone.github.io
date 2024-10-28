@@ -1,5 +1,5 @@
 body {
-    background-color: lightcyan;
+    background-color: #51E1FF;
     font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
@@ -42,15 +42,15 @@ h3 {
     width: 20%;
     margin: 10px;
     padding: 10px 20px;
-    background: rgb(88, 235, 232); /* pick a color */
-    border-radius: 20%;
+    background: #6BB6FC; /* pick a color */
+    border-radius: 15%;
 }
 
 .project img {
     width: 300px;
     /*height: 300px;*/
     margin: 10px;
-    border: 3px black; /* choose a color */
+    border: 2px solid #1745FC; /* choose a color */
     display: block;
     margin: auto;
     }
@@ -80,7 +80,7 @@ a { /* change the appearance of ALL links */
     width: 150px;
     height: 200px;
     border-radius: 25%;
-    border: 2px solid rgb(1, 0, 2);
+    border: 2px solid#1745FC;
     }
 .about p 
 {
