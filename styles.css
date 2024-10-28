@@ -39,10 +39,10 @@ h3 {
     flex-wrap:wrap; 
 } 
 .project {
-    width: 30%;
-    margin: 100px;
-    padding: 20px 10px;
-    background: gainsboro; /* pick a color */
+    width: 20%;
+    margin: 10px;
+    padding: 10px 20px;
+    background: rgb(88, 235, 232); /* pick a color */
     border-radius: 20%;
 }
 
@@ -50,7 +50,7 @@ h3 {
     width: 300px;
     /*height: 300px;*/
     margin: 10px;
-    border: 3px solid rgb(204, 157, 245); /* choose a color */
+    border: 3px black; /* choose a color */
     display: block;
     margin: auto;
     }
@@ -80,7 +80,7 @@ a { /* change the appearance of ALL links */
     width: 150px;
     height: 200px;
     border-radius: 25%;
-    border: 2px solid rgb(126, 14, 201);
+    border: 2px solid rgb(1, 0, 2);
     }
 .about p 
 {
