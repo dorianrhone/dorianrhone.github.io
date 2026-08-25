@@ -8,11 +8,18 @@ body {
 #content {
     background-color:rgb(1255, 255, 255, 0.8);
     width: 70%;
-    padding: 5px;
     margin: auto; /* Center in the page */
     border-radius: 5px;
-    border: 1px solid navy;
-    box-shadow: 5px 5px 5px rgba(255, 4, 75, 0.626);
+    box-shadow: 5px 5px rgba(255, 4, 75, 0.626);
+}
+
+header, main, footer{
+    padding: 5px;
+}
+
+header, footer {
+    background: rgb(238, 42, 94);
+    color: white;
 }
 
 /* Navigation*/
