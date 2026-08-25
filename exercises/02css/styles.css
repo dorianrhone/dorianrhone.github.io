@@ -1,0 +1,24 @@
+/* Structural */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(images/car.jpg);
+    background-size: cover;
+}
+
+#content {
+    background-color:rgb(1255, 255, 255, 0.8);
+    width: 70%;
+    padding: 5px;
+    margin: auto; /* Center in the page */
+    border-radius: 5px;
+    border: 1px solid navy;
+    box-shadow: 5px 5px 5px rgba(255, 4, 75, 0.626);
+}
+
+/* Navigation*/
+
+
+/* Typography */
+h1 {
+    color: navy;
+}
