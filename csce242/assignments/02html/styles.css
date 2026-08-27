@@ -4,9 +4,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Navigation */
-a {
-    
+/* Images */
+img {
+    border: 5px solid #fa8788;
+    border-radius: 4px;
 }
 
 /* Tables */
