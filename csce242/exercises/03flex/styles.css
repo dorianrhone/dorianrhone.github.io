@@ -42,7 +42,10 @@ body {
     text-decoration: none;  /* remove underline */
 }
 
-
+/* Images */
+img {
+    max-width: 100%;
+}
 
 
 /* Typography */
