@@ -5,7 +5,7 @@ body {
 }
 
 /* Navigation */
-a {
+#head-nav a {
     text-decoration: none;
     background: #fa8788;
     color: black;
@@ -13,9 +13,20 @@ a {
     border-radius: 4px;
 }
 
-a:hover {
+#head-nav a:hover {
     background: #faf887;
     color: black;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: black;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+#main-nav a:hover {
+    color: #faf887;
 }
 
 /* Typography */
@@ -24,5 +35,5 @@ h1 {
 }
 
 h2 {
-    color: #fb9394
+    color: #fa8788
 }
