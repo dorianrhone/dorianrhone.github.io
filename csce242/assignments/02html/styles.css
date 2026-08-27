@@ -1,12 +1,23 @@
 /* Structure */
 body {
-    background: #87cefa;
     font-family: Arial, Helvetica, sans-serif;
+    background:url(images/cars03.jpg);
+}
+
+#content {
+    background: rgba(225, 122, 122, 0.7);
+    width: 75%;
+    margin: auto;
+    padding: 5px 5px;
+    border-radius: 5px;
+    box-shadow: 10px 5px #fa8788;
 }
 
 /* Images */
 img {
-    border: 5px solid #fa8788;
+    padding:10px;
+    margin: 10px;
+    border: 5px solid #87cefa;
     border-radius: 4px;
 }
 
@@ -35,5 +46,9 @@ h1 {
 }    
 
 h2 {
-    color: #fb9394;
+    color: #87cefa;
+}
+
+p {
+    color: #e9ebed;
 }
