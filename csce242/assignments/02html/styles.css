@@ -1,0 +1,38 @@
+/* Structure */
+body {
+    background: #87cefa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation */
+a {
+    
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+
+th, 
+td {
+    border: 1px solid #909da5;
+    padding: 4px;
+}
+
+th {
+    background-color: #faf887;
+}
+
+td {
+    background-color: #f4f5f6;
+}
+
+/* Typography */
+h1 {
+    color: #faf887;
+}    
+
+h2 {
+    color: #fb9394;
+}

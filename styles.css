@@ -1,7 +1,28 @@
-/* Structural */
-
+/* Structure */
+body {
+    background-color: rgb(135, 206, 250);
+    font-family: Arial, Helvetica, sans-serif
+}
 
 /* Navigation */
+a {
+    text-decoration: none;
+    background: #fa8788;
+    color: black;
+    padding: 4px;
+    border-radius: 4px;
+}
 
+a:hover {
+    background: #faf887;
+    color: black;
+}
 
 /* Typography */
+h1 {
+    color: #faf887;
+}
+
+h2 {
+    color: #fb9394
+}
