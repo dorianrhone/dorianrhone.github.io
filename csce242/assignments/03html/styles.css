@@ -14,28 +14,24 @@
 }
 
 #sidebar {
-    list-style-type: none;
     padding-left: 0;
-    margin-left: 0;
+    text-align: center;
 }
 
 #sidebar li {
-    margin-bottom: 5px;
-    display: block;
-    text-align: center;
+    padding: 0px;
+    list-style-type: none;
+    background-color: white;
+    border-bottom: 1px solid white;
 }
 
 #sidebar a {
     text-decoration: none;
-    color: pink;
-    background-color: white;
-    padding: 2px;
-    border-radius: 2px;
-}
-
-#section {
-    padding: 0;
-    text-align: left;
+    padding: 5px;
+    margin: 2px;
+    color: lightcoral;
+    display: block;
+    border: 1px solid white;
 }
 
 .column {
@@ -100,11 +96,12 @@ body {
 
 /* Larger Resolutions */
 @media (min-width: 900px) {
-    #main-nav ul, .flex-container {
+    #main-nav ul, .flex-container{
         display: flex;
     }
 
     #main-nav li,
+    #sidebar li,
      .col1of2, .col1of3, .col1of4{
         flex: 1;
     }
