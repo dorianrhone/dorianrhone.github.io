@@ -11,19 +11,44 @@ img {
     max-width:100%;
 }
 
+#footer-logo {
+    width: 100px;
+    margin: 0px;
+    padding-left: 20px;
+    display: block;
+}
+
 /* Hero */
 #hero {
     text-align: center;
+    padding: 20px;
+    margin: 20px;
 }
 
 #hero-description {
     position:relative;
-    top: 0;
-    left: 20;
     background:rgba(255, 255, 255, 0.8);
-    padding:10px;
-    font-size:1.5em;
+    padding:20px;
+    margin:auto;
+    font-size:20px;
 }
+
+.hero-arrow {
+    position:absolute;
+    top:22%;
+    font-size:12em;
+    color:white;
+    text-decoration: none;
+}
+
+#hero-arrow-right {
+    right:2%;
+}
+
+#hero-arrow-left {
+    left:2%;
+}
+
 
 /*Footer links */
 #footer-links header {
@@ -34,6 +59,7 @@ img {
     list-style-type: none;
     width:fit-content;
     margin:auto;
+    padding: center;
 }
 
 #footer-social li {
@@ -52,8 +78,8 @@ img {
 
 #footer-links-title h1, #footer-links h2 {
     margin:0;
-    padding-left:10px;
-    margin-top:-50px;
+    padding-left:20px;
+    margin-top:50px;
 }
 
 #footer-links {
@@ -71,6 +97,7 @@ img {
 
 #footer-links .columns section {
     padding:10px;   
+    margin: 15px;
 }
 
 #footer-links section ul {
@@ -88,6 +115,9 @@ img {
 #footer-copy {
     background:black;
     color:white;
+    text-align: left;
+    padding: 5px;
+    margin: 0;
 }
 
 #footer-copy a {
@@ -110,33 +140,32 @@ img {
     text-decoration: none;  /* Remover underline */
 }
 
-/* Navigation */
 #top-nav {
     background: black;
     color: white;
-    padding: 10px 0;
+    padding: 1px 0;
     text-align: left;
+    margin: 0;
 }
 
 #header-nav {
     background: #75010A;
     color: white;
-    padding: 10px 0;
+    padding: 5px 0;
     text-align: right;
 }
 
 /* Typography */
 #top-nav ul, #header-nav ul {
-    margin: 0;
-    padding: 0;
-    font-size: 1.5em;
+    margin:0;
+    padding:5px 0;
     text-decoration: none;
 }
 
 #top-nav li, #header-nav li {
     display: inline-block;
-    margin-right: 20px;
-    padding: 5px;
+    margin-left: 0px;
+    padding: 0px 10px;
     color: white;
     list-style-type: none;
 }
@@ -150,13 +179,15 @@ img {
  #header-nav a {
     color: white;
     text-decoration: none;
+    font-size: 25px;
 }
 
 #top-title-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
+    padding: 10px;
+    margin: 5px;
     font-size: 15px;
 }
 
@@ -165,6 +196,90 @@ img {
     padding: 0;
     text-align: right;
 }
+
+/* Connection Section */
+#connection {
+    text-align: center;
+    padding: auto;
+    margin: auto;
+}
+
+#connection ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#connection li {
+    margin-bottom: 10px;
+}
+
+#connection a {
+    color: #75010A;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#connection-social {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;   
+}
+
+#connetion-links ul {
+    color: #75010A;
+    text-decoration: none;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#connection-header h1 {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 60px;
+    color:#75010A;
+}
+
+#connection-header h3 {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    font-size: 15px;
+    color: grey;
+}
+
+#connection-header ul {
+    text-align: center;
+    padding: 0px;
+    margin: 5px;
+    font-size: 15px;
+}
+
+#connection-header li {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 10px;
+    color: white;
+    list-style-type: none;
+    background-color: #75010A;
+}
+
+#connection-header a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin: auto;
+    font-size: 15px;
+}
+
+/* columns for all devices */
+.columns-mobile {
+    display:flex;
+}
+
+/* Responsive Design */
 
 /* 600 px or larger */
 @media (min-width: 1000px) {
@@ -192,15 +307,15 @@ img {
         border:0;
     }
 
-    .one {
+    .one, .columns.one {
         flex:1;
     }
 
-    .two {
+    .two, .columns.two {
         flex:2;
     }
 
-    .three {
+    .three, .columns.three {
         flex:3;
     }
 
