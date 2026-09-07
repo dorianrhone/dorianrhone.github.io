@@ -25,7 +25,50 @@ body {
     border-radius: 5px;
 }
 
+#main-nav li {
+    display: inline-block;
+    margin-right: 10px;
+    background: #fa8788;
+}
+#main-nav img {
+    background: #faf887;
+}
+
 #main-nav a:hover {
+    color: #faf887;
+}
+
+/* Pictures */
+#pictures {
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    width: 100%;
+}
+
+#pictures img {
+    width: 300px;
+    height: 220px;
+    border-radius: 20%;
+    margin: 10px;
+    background: #faf887;
+
+}
+
+#pictures li {
+    margin-right: 0px;
+    background: #fa8788;
+    padding: 4px;
+    border-radius: 10%;
+    flex-direction: column;
+}
+
+#pictures a {
+    text-decoration: none;
+    color: black;
+}
+
+#pictures a:hover {
     color: #faf887;
 }
 
