@@ -1,5 +1,12 @@
 // CSCE 242 Dorian Rhone
 // JavaScript for Assignment 8
+
+//toggle the navigation
+document.querySelector("#toggle-nav").onclick = () => {
+    document.querySelector("#main-nav").classList.toggle("hide-small");
+}
+
+
 // Button for Exercise 1 and Exercise 2
 const btnEx1 = document.getElementById("btn-ex1");
 const btnEx2 = document.getElementById("btn-ex2");
@@ -38,25 +45,25 @@ const pDaysLeft = document.getElementById("d-left");
 const cMessage = document.getElementById("c-message");
 
 setInterval(() => {
-    const date = new Date();
-    const endOfSemester = new Date("2026-12-4");
-    const timeDiff = endOfSemester - date;
-    const daysLeft = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+   // const date = new Date();
+    //const endOfSemester = new Date("2026-12-4");
+    //const timeDiff = endOfSemester - date;
+    //const daysLeft = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+
+    daysLeft = 1; // Hardcoded for testing purposes
 
     pDaysLeft.innerHTML = `There are ${daysLeft} day(s) left in the semester.`;
     
-    if(daysLeft > 60){
+    if(daysLeft >= 60){
         cMessage.innerHTML = 'Counter will not start till there are less than 60 days left in the semester.';
-    } else if(daysLeft < 60){
+    } else if(daysLeft >= 30){
         cMessage.innerHTML = 'You have less than 60 days left in the semester. Make the most of your time!';
-    } else if(daysLeft < 30){
+    } else if(daysLeft >= 14){
         cMessage.innerHTML = 'You have less than 30 days left in the semester. Keep up the good work!';
-    } else if(daysLeft < 14){
+    } else if(daysLeft >= 7){
         cMessage.innerHTML = 'You have less than 14 days left in the semester. Stay focused and finish strong!';
-    } else if(daysLeft < 7){
+    } else if(daysLeft >= 1){
         cMessage.innerHTML = 'You have less than 7 days left in the semester. Do your best!';
-    } else if(daysLeft < 1){
-        cMessage.innerHTML = 'One more classes!';
     }
 
 }, 1000);

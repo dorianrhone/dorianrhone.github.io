@@ -1,5 +1,9 @@
 /* CSCE242 Dorian Rhone */
 
+:root {
+    --headings: #393D3B;
+}
+
 /* Styles */
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -17,11 +21,14 @@ body{
 }
 
 /* Header */
+#main-header {
+    position: relative;
+}
+
 #main-nav {
     list-style-type: none;
     padding: 10px;
     margin: auto;
-    display: flex;
     justify-content: center;
 }
 
@@ -33,6 +40,19 @@ body{
     border-radius: 5px;
     padding: 10px 20px;
     margin: 0 10px;
+}
+
+/* Navigation */
+#toggle-nav {
+    position:absolute;
+    top:15px;
+    right:15px;
+}
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color:var(--headings);
+    margin:6px 0;
 }
 
 /* Projects Section */
@@ -57,4 +77,44 @@ body{
 /* Hidden */
 .hidden {
     display: none;
+}
+
+.hide-small {
+    display: none;
+}
+
+/* 600 px or larger */
+@media (min-width: 600px) {
+
+    #toggle-nav {
+        display:none;
+    }
+
+    #main-nav {
+        display:flex;
+    }
+
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    .four {
+        flex:4
+    }
+
+    .five {
+        flex:5;
+    }
+
+    .six {
+        flex:6;
+    }
 }
