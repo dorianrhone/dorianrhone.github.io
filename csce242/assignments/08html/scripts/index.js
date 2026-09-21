@@ -45,12 +45,10 @@ const pDaysLeft = document.getElementById("d-left");
 const cMessage = document.getElementById("c-message");
 
 setInterval(() => {
-   // const date = new Date();
-    //const endOfSemester = new Date("2026-12-4");
-    //const timeDiff = endOfSemester - date;
-    //const daysLeft = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
-
-    daysLeft = 1; // Hardcoded for testing purposes
+    const date = new Date();
+    const endOfSemester = new Date("2026-12-4");
+    const timeDiff = endOfSemester - date;
+    const daysLeft = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
 
     pDaysLeft.innerHTML = `There are ${daysLeft} day(s) left in the semester.`;
     
