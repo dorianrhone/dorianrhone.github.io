@@ -1,11 +1,32 @@
 
-:root {
-    --headings: #C99A52;
+#body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#body
-{
+#content {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #0D0D0B;
+    color:#C99A52;
 }
 
+/* Navigation */
+
+#main-heading {
+    color: #C99A52;
+}
+
+#main-nav {
+    display: flex;
+    margin: auto;
+}
+
+#main-nav li {
+    list-style-type: none;
+    margin: 0 10px;
+    color: var(--headings);
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: var(--headings);
+}
