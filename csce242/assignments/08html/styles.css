@@ -1,4 +1,6 @@
+/* CSCE242 Dorian Rhone */
 
+/* Styles */
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--background);
@@ -14,6 +16,7 @@ body{
     padding: 20px;
 }
 
+/* Header */
 #main-nav {
     list-style-type: none;
     padding: 10px;
@@ -32,7 +35,8 @@ body{
     margin: 0 10px;
 }
 
-#projects {
+/* Projects Section */
+.projects {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
