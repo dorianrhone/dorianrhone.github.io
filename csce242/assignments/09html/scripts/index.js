@@ -2,7 +2,7 @@
 
 // function to create a car with the specified 
 // position and color within the road-scene
-function createCar(x, y, color) {
+const createCar = (x, y, color) => {
     const scene = document.getElementById("road-scene");
 
     const car = document.createElement("div");
@@ -33,7 +33,7 @@ function createCar(x, y, color) {
 
 // load the page with cars with a for loop to create 8 colored cars
 // in a random postion within the lanes of the road
-window.onload = function() {
+window.onload = () => {
     const colors = ["red", "blue", "green", "yellow", "purple"];
     
     for (let i = 0; i < 8; i++) {
