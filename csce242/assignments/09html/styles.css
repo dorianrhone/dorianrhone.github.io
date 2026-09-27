@@ -1,3 +1,6 @@
+/* Dorian Rhone CSCE242 */
+
+/* Structure */
 body {
     margin: 0;
     padding: 20px;
@@ -9,6 +12,7 @@ body {
     align-items: center;
 }
 
+/* styles for the road scene */
 #road-scene {
     position: relative;
     width: 900px;
@@ -25,6 +29,7 @@ body {
     height: 100%;
 }
 
+/* styles for the road */
 .road {
     position: absolute;
     top: 20%;
@@ -37,9 +42,58 @@ body {
 
 .dashed-line {
     position: absolute;
-    top: 45%;
+    top: 50%;
     width: 100%;
-    height: 3px;
-    border: dashed 3px yellow;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    height: 4px;
+    background: repeating-linear-gradient(
+        to right,
+        yellow 0px,
+        yellow 30px,
+        transparent 30px,
+        transparent 55px
+    );
 }
+
+/*
+    CSS car art created with assistance from ChatGPT.
+    The car uses CSS div elements for the body,
+    roof, window, and wheels.
+*/
+.car {
+    position: absolute;
+    width: 70px;
+    height: 28px;
+    border-radius: 8px 12px 6px 6px;
+}
+
+.car-top {
+    position: absolute;
+    top: -14px;
+    left: 18px;
+    width: 38px;
+    height: 18px;
+    border-radius: 12px 12px 0 0;
+}
+
+.window {
+    position: absolute;
+    top: -11px;
+    left: 22px;
+    width: 30px;
+    height: 11px;
+    background-color: lightblue;
+    border-radius: 5px 5px 2px 2px;
+}
+
+.wheel-front, .wheel-back {
+    position: absolute;
+    bottom: -7px;
+    width: 14px;
+    height: 14px;
+    background-color: #222;
+    border-radius: 50%;
+}
+
+.wheel-front {right: 12px;}
+
+.wheel-back {left: 12px;}
