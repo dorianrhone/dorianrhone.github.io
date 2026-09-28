@@ -261,6 +261,15 @@ footer p {
 }
 
 @media (max-width: 1000px) {
+    #features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #features section {
+        width: 80%;
+    }
+
     #main-nav ul.hide-small {
         display: none;
     }
