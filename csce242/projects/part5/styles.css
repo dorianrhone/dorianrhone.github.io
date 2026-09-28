@@ -4,8 +4,8 @@
     --bg-lighter: #1A1A1A;
     --gold: #C99A52;
     --text-light: #E0E0E0;
-    --font-heading: 'Arial', 'Helvetica', sans-serif;
-    --font-body: 'Arial', 'Helvetica', sans-serif;
+    --font-heading: 'Inter';
+    --font-body: 'Inter';
 }
 body {
     font-family: var(--font-body);
