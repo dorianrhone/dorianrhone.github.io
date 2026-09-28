@@ -90,14 +90,15 @@ document.getElementById("btn-show-toy-prices").onclick = () => {
 };
 
 const createElement = (data, type) => {
+    console.log(type);
     const elem = document.createElement(type);
     elem.innerHTML = data;
     return elem;
 };
 
-const createTR = (data1, data2, type)=>{
+const createTR = (data1, data2, type) => {
     const tr = document.createElement("tr");
     tr.append(createElement(data1, type));
     tr.append(createElement(data2, type));
     return tr;
-};
+}
