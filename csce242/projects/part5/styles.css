@@ -1,50 +1,61 @@
 /* Styles */
-
+:root {
+    --bg-dark: #121212;
+    --bg-lighter: #1A1A1A;
+    --gold: #C99A52;
+    --text-light: #E0E0E0;
+    --font-heading: 'Arial', 'Helvetica', sans-serif;
+    --font-body: 'Arial', 'Helvetica', sans-serif;
+}
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-body);
     margin: 0;
     padding: 0;
-    background-color: #1A1A1A;
-    color: #C99A52;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--gold);
+    font-weight: 400;
 }
 
 header {
-    background-color: #1A1A1A;
-    padding: 20px;
+    background-color: var(--bg-lighter);
+    padding: 20px 40px;
     display: flex;
-    margin:auto;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #C99A52;
+    border-bottom: 1px solid var(--gold);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
 }
 
 /* Main Navigation */
-#main-nav {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
 #main-nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-}
-
-#main-nav li {
-    margin-right: 20px;
+    gap: 30px;
 }
 
 #main-nav a {
     text-decoration: none;
-    color: #C99A52;
-    font-weight: bold;
+    color: var(--gold);
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
 }
 
 #main-nav a:hover {
-    color: #fff;
+    color: var(--text-light);
 }
 
 /* Slides */
@@ -58,6 +69,19 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Monile Nav Toggle */
+#toggle-nav {
+    display: none;
+    cursor: pointer;
+}
+
+#toggle-nav div {
+    width: 25px;
+    height: 2px;
+    background-color: var(--gold);
+    margin: 6px 0;
 }
 
 /* Hero Section */
@@ -95,14 +119,14 @@ main {
 
 /* footer */
 footer {
-    background-color: #1A1A1A;
+    background-color: var(--bg-lighter);
     padding: 20px;
     text-align: center;
     display:flex;
     justify-content: space-around;
     align-items: center;
     margin:auto;   
-    border-top: 1px solid #C99A52;
+    border-top: 1px solid var(--gold);
 }
 
 /* Hiding */
@@ -123,7 +147,7 @@ footer {
 #toggle-nav div {
     width:25px;
     height:2px;
-    background-color:#C99A52;
+    background-color:var(--gold);
     margin:6px 0;
 }
 
@@ -133,7 +157,7 @@ footer {
     justify-content: space-between;
     margin: auto;
     padding: 20px;
-    border: 1px solid #C99A52;
+    border: 1px solid var(--gold);
 }
 
 #features section {
@@ -152,15 +176,15 @@ footer {
 
 #button button {
     padding: 10px 20px;
-    background-color: #C99A52;
-    color: #1A1A1A;
+    background-color: var(--gold);
+    color: var(--bg-lighter);
     border: none;
     cursor: pointer;
 }
 
 #button button:hover {
-    background-color: #fff;
-    color: #1A1A1A;
+    background-color: var(--text-light);
+    color: var(--bg-lighter);
 }
 
 /* 600 px or larger */
