@@ -222,7 +222,10 @@ button:hover {
 }
 
 /* footer */
+
+
 footer {
+    text-align: center;
     background-color: var(--bg-lighter);
     padding: 60px 40px;
     margin: 0 auto;
@@ -241,6 +244,8 @@ footer section {
 footer h3 {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 10px;
 }
 
 footer p {
@@ -251,6 +256,7 @@ footer p {
 .footer-copyright {
     flex-basis: 100%;
     text-align: center;
+    border-top: 1px solid var(--gold);
     margin-top: 0;
 }
 
