@@ -17,13 +17,29 @@ class Place {
 
         section.append(this.placeName());
         section.append(this.placeImage());
-        section.append(this.moreInfo());
 
-        const moreInfo = section.querySelector(".more-info");
-        moreInfo.classList.add("hidden");
+       section.querySelector("a").onclick = (e) => {
+            e.preventDefault();
+            
+            const modal = document.getElementById("modal");
+            const modalBody = document.getElementById("modal-body");
+            
+            modalBody.innerHTML = "";
 
-       section.querySelector("a").onclick = () => {
-            moreInfo.classList.toggle("hidden");
+            const h2 = document.createElement("h2");
+            h2.textContent = this.title;
+            modalBody.append(h2);
+
+            modalBody.append(this.placeIframe());
+
+            const ul = document.createElement("ul");
+            ul.append(this.liInfo("Type: ", this.type));
+            ul.append(this.liInfo("Description: ", this.description));
+            ul.append(this.liInfo("Things to Do: ", this.toDo));
+
+            modalBody.append(ul);
+
+            modal.showModal();
         };
 
         return section;
@@ -54,20 +70,6 @@ class Place {
         return iframe;
     }
 
-    moreInfo(){
-        const container = document.createElement("div");
-        container.classList.add("more-info");
-
-        const ul = document.createElement("ul");
-        container.append(this.placeIframe());
-        ul.append(this.liInfo("Type: ", this.type));
-        ul.append(this.liInfo("Description: ", this.description));
-        ul.append(this.liInfo("Things to Do: ", this.toDo));
-
-        container.append(ul);
-        return container;
-    }
-
     liInfo(property, value) {
         const li = document.createElement("li");
         li.innerHTML = `<strong>${property}</strong>: ${value}`;
@@ -95,4 +97,10 @@ place.forEach((place)=>{
     placeDiv.append(place.item);
 });
 
+const modal = document.getElementById("modal");
+const close = document.querySelector(".close");
+
+close.onclick = () => {
+    modal.close();
+}
 
