@@ -50,10 +50,10 @@ footer {
 
 /* modal */
 .modal {
-    width: 80%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 700px;
     padding: 0px;
-    border: 1px solid black;
+    border: transparent;
     border-radius: 10px;
 }
 
@@ -61,8 +61,21 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.modal-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
 
-
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
 
 /* Styles for the place cards */
 .place {

@@ -25,7 +25,7 @@ class Place {
             const modalBody = document.getElementById("modal-body");
             
             modalBody.innerHTML = "";
-
+            
             const h2 = document.createElement("h2");
             h2.textContent = this.title;
             modalBody.append(h2);
