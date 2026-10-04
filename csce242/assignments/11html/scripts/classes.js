@@ -16,6 +16,7 @@ class Place {
         section.classList.add("project-card");
 
         section.append(this.placeName());
+        section.append(this.placeType());
         section.append(this.placeImage());
 
        section.querySelector("a").onclick = (e) => {
@@ -53,6 +54,12 @@ class Place {
         a.href="#";
 
         return h3;
+    }
+
+    placeType() {
+        const p = document.createElement("p");
+        p.textContent = `${this.type} Vacation`;
+        return p;
     }
 
     placeImage() {
