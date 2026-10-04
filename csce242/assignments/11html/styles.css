@@ -31,14 +31,14 @@ footer {
     gap: 20px;
     justify-content: center;
     background-color: transparent;
-    border: 1px solid #ccc;
     box-shadow: none;
+    border: none;
 }
 
 .project-card {
     flex: 1 1 300px;
-    min-width: 300px;
-    max-width: 300px;
+    min-width: 320px;
+    max-width: 375px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -50,7 +50,7 @@ footer {
 
 /* modal */
 .modal {
-    width: 100%;
+    width: 80%;
     max-width: 700px;
     padding: 0px;
     border: transparent;
