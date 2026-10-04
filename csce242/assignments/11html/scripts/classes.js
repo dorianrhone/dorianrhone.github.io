@@ -27,19 +27,25 @@ class Place {
             
             modalBody.innerHTML = "";
             
+            const mLeft = document.createElement("div");
+            mLeft.classList.add("modal-left");
+
+            const mRight = document.createElement("div");
+            mRight.classList.add("modal-right");
+
             const h2 = document.createElement("h2");
             h2.textContent = this.title;
-            modalBody.append(h2);
-
-            modalBody.append(this.placeIframe());
 
             const ul = document.createElement("ul");
-            ul.append(this.liInfo("Type: ", this.type));
-            ul.append(this.liInfo("Description: ", this.description));
-            ul.append(this.liInfo("Things to Do: ", this.toDo));
+            ul.append(this.liInfo("Type", this.type));
+            ul.append(this.liInfo("Description", this.description));
+            ul.append(this.liInfo("Things to Do", this.toDo));
 
-            modalBody.append(ul);
+            mLeft.append(h2);
+            mLeft.append(this.placeIframe());
+            mRight.append(ul);
 
+            modalBody.append(mLeft, mRight);
             modal.showModal();
         };
 
@@ -73,7 +79,7 @@ class Place {
         const iframe = document.createElement("iframe");
         iframe.src = this.iframe;
         iframe.width = "100%";
-        iframe.height = "200";
+        iframe.height = "300";
         return iframe;
     }
 
