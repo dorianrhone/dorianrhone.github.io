@@ -4,7 +4,7 @@
     --bg-lighter: #1A1A1A;
     --gold: #C99A52;
     --text-light: #E0E0E0;
-    --font-heading: 'Inter';
+    --font-heading: 'Cormorant Garamond', 'serif';
     --font-body: 'Inter';
 }
 body {
@@ -87,7 +87,7 @@ header h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.5);
+    filter: brightness(0.45);
 }
 
 /* Hero Section */
@@ -151,7 +151,6 @@ header h1 {
 
 /* Button Group */
 #button-group {
-    font-size: 1.2rem;
     justify-content: center;
     gap: 20px;
     display: flex;
@@ -263,6 +262,157 @@ footer p {
     margin-top: 0;
 }
 
+/* Menu Page */
+.menu-hero {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid var(--gold);
+}
+
+.menu-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.menu-hero-content h1 {
+    font-size: 3.5rem;
+    letter-spacing: 6px;
+    margin: 0;
+}
+
+.menu-hero-content p {
+    font-size: 1rem;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+/* Menu Introduction */
+.menu-intro {
+    max-width: 700px;
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.menu-intro h2 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.menu-intro p {
+    color: #bcbcbc;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+/* Menu Sections */
+.menu-category {
+    max-width: 1100px;
+    margin: 0 auto 80px;
+    display: flex;
+    align-items: stretch;
+    background-color: var(--bg-lighter);
+    border: 1px solid #333;
+}
+
+
+/* Alternate image position */
+.menu-category.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Menu Images */
+
+.menu-image {
+    width: 42%;
+}
+
+.menu-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 430px;
+    object-fit: cover;
+}
+
+/* Menu List */
+.menu-list {
+    width: 58%;
+    padding: 35px 45px;
+    box-sizing: border-box;
+}
+
+.menu-list > h2 {
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--gold);
+}
+
+
+/* Individual Menu Item */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item h3 {
+    color: var(--text-light);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin: 0 0 4px;
+}
+
+.menu-item p {
+    color: #999;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.menu-item span {
+    color: var(--gold);
+    font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* Reservation Area */
+.menu-reservation {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: var(--bg-lighter);
+    border-top: 1px solid var(--gold);
+}
+
+.menu-reservation p {
+    color: var(--text-light);
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+.menu-reservation h2 {
+    font-size: 2.3rem;
+    letter-spacing: 4px;
+    margin: 5px 0 30px;
+}
+
 @media (max-width: 1000px) {
     #features {
         flex-direction: column;
@@ -301,34 +451,41 @@ footer p {
         padding: 20px;
     }
 
-    /* Structure */
-    #content {
-        width:80%;
-        margin:auto;
+    /* Menu */
+    .menu-category,
+    .menu-category.reverse {
+        width: 90%;
+        flex-direction: column;
     }
 
-    /* Columns */
-    .one {
-        flex:1;
+    .menu-image {
+        width: 100%;
+    }
+    
+    .menu-image img {
+        width: 100%;
+        height: auto;
+        min-height: 0;
     }
 
-    .two {
-        flex:2;
+    .menu-list {
+        width: 100%;
+        padding: 25px 20px;
     }
 
-    .three {
-        flex:3;
+    .menu-item {
+        gap: 15px;
     }
 
-    .four {
-        flex:4;
+    .menu-item h3 {
+        font-size: 0.9rem;
     }
 
-    .five {
-        flex:5;
+    .menu-item p {
+        font-size: 0.75rem;
     }
 
-    .six {
-        flex:6;
+    .menu-hero-content h1 {
+        font-size: 2rem;
     }
 }
