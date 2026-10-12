@@ -395,6 +395,54 @@ footer p {
     white-space: nowrap;
 }
 
+/* Forms */
+
+.form {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.form p {
+    margin-bottom: 15px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-light);
+}
+
+.form input,
+.form textarea,
+.form select {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    border: 1px solid var(--gold);
+    font-family: var(--font-body);
+    font-size: 1rem;
+}
+
+.form textarea {
+    resize: vertical;
+}
+
+.form input:focus,
+.form textarea:focus,
+.form select:focus {
+    outline: 2px solid var(--gold);
+    outline-offset: 2px;
+}
+
+/* Date and Time Icons */
+
+.form input[type="date"],
+.form input[type="time"] {
+    color-scheme: dark;
+}
+
 /* Reservation Area */
 .cta-section {
     text-align: center;
