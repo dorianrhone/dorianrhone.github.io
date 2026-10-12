@@ -364,9 +364,8 @@ footer p {
 /* Individual Menu Item */
 .menu-item {
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
-    gap: 30px;
+    gap: 15px;
     padding: 15px 0;
     border-bottom: 1px solid #333;
 }
@@ -377,6 +376,11 @@ footer p {
     object-fit: cover;
     flex-shrink: 0;
     border: 1px solid var(--gold);
+}
+
+.menu-item > div {
+    flex: 1;
+    min-width: 0;
 }
 
 .menu-item:last-child {
@@ -401,6 +405,7 @@ footer p {
     font-size: 1rem;
     font-weight: 500;
     white-space: nowrap;
+    margin-left: auto;
 }
 
 /* Forms */
