@@ -371,6 +371,14 @@ footer p {
     border-bottom: 1px solid #333;
 }
 
+.menu-item-image {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 1px solid var(--gold);
+}
+
 .menu-item:last-child {
     border-bottom: none;
 }
